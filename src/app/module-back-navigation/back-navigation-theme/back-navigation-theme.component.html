@@ -1,0 +1,12 @@
+<button class="navigation right" (click)="edit()">Edit</button>
+<div class="card">
+    <div class="row">
+        <div class="time">{{speaker.time}}</div>
+        <div class="theme">{{speaker.theme}}</div>
+    </div>
+    <div class="tabs">
+        <button class="navigation" [routerLink]="['../../', speaker.id, 'speaker']" routerLinkActive="active">Speaker</button>
+        <button class="navigation" [routerLink]="['../../', speaker.id, 'theme']" routerLinkActive="active">Theme</button>
+    </div>
+    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet assumenda doloribus dolorum enim ex labore officiis pariatur rem tempora temporibus ullam, vero voluptates? Adipisci harum incidunt ipsam molestiae mollitia, nam neque quaerat quasi quo quos reiciendis sit ut veritatis!</div>
+</div>

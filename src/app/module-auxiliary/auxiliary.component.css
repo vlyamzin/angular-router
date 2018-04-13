@@ -1,0 +1,26 @@
+.wrapper {
+    width: 320px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    background: #dcdcdc;
+    border: 5px solid;
+}
+
+.details-wrapper {
+    position: fixed;
+    top: 20px;
+    width: 320px;
+    height: 670px;
+    transform: translateX(340px);
+    background: #dcdcdc;
+    transition: transform 300ms ease-in-out;
+    padding: 15px;
+}
+
+.details-wrapper.open {
+    transform: translateX(-15px);
+}

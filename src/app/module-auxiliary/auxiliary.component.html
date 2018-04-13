@@ -1,0 +1,6 @@
+<div class="wrapper">
+    <router-outlet></router-outlet>
+    <div class="details-wrapper" [class.open]="detailsIsOpen">
+        <router-outlet name="details" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)"></router-outlet>
+    </div>
+</div>

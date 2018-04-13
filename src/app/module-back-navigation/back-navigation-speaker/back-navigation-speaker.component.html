@@ -1,0 +1,21 @@
+<button class="navigation" (click)="back()">Go Back</button>
+<button class="navigation" (click)="edit()">Edit</button>
+<div class="card">
+    <div class="row">
+        <div class="time">{{speaker.time}}</div>
+        <div class="theme">{{speaker.theme}}</div>
+    </div>
+    <div class="tabs">
+        <button class="navigation" [routerLink]="['../../', speaker.id, 'speaker']" routerLinkActive="active">Speaker</button>
+        <button class="navigation" [routerLink]="['../../', speaker.id, 'theme']" routerLinkActive="active">Theme</button>
+    </div>
+    <div class="two-column">
+        <div class="photo">
+            <img src="{{speaker.photoUrl}}">
+        </div>
+        <div class="speaker">
+            <div class="name">{{speaker.name}}</div>
+            <div class="position">{{speaker.position}}</div>
+        </div>
+    </div>
+</div>

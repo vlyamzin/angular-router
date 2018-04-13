@@ -1,0 +1,4 @@
+<div class="box">
+    <div routerLink="/simple-one" [queryParams]="{text: 'hello'}" fragment="world" routerLinkActive="active">First component</div>
+    <div [routerLink]="['/simple-two', {matrix: 'How are you doing?'}]" routerLinkActive="active">Second component</div>
+</div>

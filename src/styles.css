@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button {
+    outline: none;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+button.navigation {
+    background-color: #0d99a5;
+    border: 1px solid #0d3349;
+    padding: 5px 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px
+}
+
+button.navigation.active {
+    background-color: #FF729F;
+}

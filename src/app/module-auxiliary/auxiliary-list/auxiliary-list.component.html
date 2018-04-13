@@ -1,0 +1,4 @@
+<div class="card" *ngFor="let speaker of list" (click)="goToDetails(speaker.id)">
+    <div class="time">{{speaker.time}}</div>
+    <div class="theme">{{speaker.theme}}</div>
+</div>
